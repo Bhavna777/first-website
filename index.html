@@ -1,3 +1,4 @@
+
 <html>
 <body>
 <head>
@@ -6,15 +7,18 @@
   <header>
       <div size=100% class="main">
             <div class="logo">
-                <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimage.shutterstock.com%2Fimage-vector%2Fred-hacker-vector-logo-your-260nw-1315619480.jpg&imgrefurl=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fhacker%2Blogo&docid=B5IObab59VVbUM&tbnid=OcQDBQjB_W_ObM%3A&vet=10ahUKEwiqlLjTzZHnAhXQcn0KHbW-D00QMwhTKAIwAg..i&w=260&h=280&client=firefox-b-e&bih=610&biw=1366&q=gray%20hackers%20logo&ved=0ahUKEwiqlLjTzZHnAhXQcn0KHbW-D00QMwhTKAIwAg&iact=mrc&uact=8">
+                <h1>Green Hat Hacker</h1>
             </div>
-            <ul>
-                <li class="active"><a href="#">HOME</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">BLOGS</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">CONTECT</a></li>
-            </ul>
+            <div class="Menu">
+	            <ul>
+	                <li class="active"><a href="#">HOME</a></li>
+	                <li><a href="#">SERVICES</a></li>
+	                <li><a href="#">BLOGS</a></li>
+	                <li><a href="#">ABOUT</a></li>
+	                <li><a href="#">CONTECT</a></li>
+	            </ul>
+            </div>
+            
         </div>
         <div class="title">
             <h1>LEARN HACKING</h1>
@@ -33,17 +37,23 @@
 </body>
 <style>
     {
-    margin:0;
+    margin:0 !important;
     padding: 0;
     font-family: Century Gothic;
 }
 
+
+.main ul {
+	text-align: right;
+}
 header{
     background-size: 100%;
-    background-image: url(https://images.csmonitor.com/csm/2016/09/1006051_3_093016-Anand1-passcode_standard.jpg?alias=standard_900x600nc)
-    list-style-type:none;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSZHK55kOIH90e9Xxm8LfzBP7zceEupFO_6ng&usqp=CAU");
+    height: 100%;
+    width: 100%;
+    /*list-style-type:none;
     margin-top: 25px;
-    margin-right: 20px;
+    margin-right: 20px;*/
 }
 ul li{
     display: inline-block;
@@ -63,18 +73,29 @@ ul li.active a{
     background-color: #fff;
     color: #000;
 }
-.logo img{
+.logo h1{
     float: left;
-    width: 250px;
-    height: 150px;
+    width: 350px;
+    height: 250px;
     margin-top: 25px;
-    margin-left: 5px;
+    margin-left: 50px;
     border: 1px solid #000;
+    color: white;
 }
-.main{
+
+.Menu ul{
+    float: right;
+    /*width: 350px;
+    height: 250px;*/
+    margin-top: 30px;
+    margin-right: 10px;
+    border: 1px solid #000;
+    color: white;
+}
+/*.main{
     max-width: 1200px;
     margin: auto;
-}
+}*/
 .title{
     position: absolute;
     top:50%;
@@ -84,6 +105,7 @@ ul li.active a{
 .title h1{
     color:#fff;
     font-size: 70px;
+    align-content: right;
 }
 .button{
     position: absolute;
